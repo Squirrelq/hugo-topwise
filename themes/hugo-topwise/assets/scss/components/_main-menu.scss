@@ -1,0 +1,42 @@
+.main-menu {
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+  > ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 25px 0px 0px 0px;
+    > li {
+      list-style: none;
+      font-size: 1rem;
+      > a {
+        padding: 10px 14px 10px 14px;
+        display: inline-block;
+        font-weight: regular;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #4b4b4b;
+        font-family: "Inter", sans-serif;
+        &:hover {
+          color: #41c391;
+          transition: all 225ms ease-in 0s;
+          text-decoration: none;
+        }
+      }
+      &.active {
+        > a {
+          background: #ffffff;
+          text-decoration: none;
+          color: #2f87af;
+          &:hover {
+            text-decoration: none;
+            transition: all 225ms ease-in 0s;
+            color: #41c391;
+          }
+        }
+      }
+    }
+  }
+}
