@@ -1,0 +1,12 @@
+.mission-text {
+  color: $primary-dark;
+  h2 {
+    font-size: 1.3rem;
+    @include media-breakpoint-up(sm) {
+      font-size: 1.6rem;
+    }
+    @include media-breakpoint-up(md) {
+      font-size: 2rem;
+    }
+  }
+}
