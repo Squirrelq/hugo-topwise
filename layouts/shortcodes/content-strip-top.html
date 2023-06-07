@@ -1,0 +1,21 @@
+
+{{ $bundle := .Get 0 }}
+{{ $match := .Get 1 }}
+{{ $page := .Page.Site.GetPage $bundle }}
+{{ with $page }}
+{{ $resource := $page.Resources.GetMatch (printf "**%s*" $match ) }}
+{{ with $resource }}
+  <div class="strip about-top">
+    <div class="about-bg">
+      <div class="about-text">
+        <p>{{ .Content }}</p>
+      </div>
+    </div>
+    <div class="about-img-container">
+      <picture class="about-img">
+        <img src="{{ .Params.image | relURL }}" />
+      </picture>
+    </div>
+  </div>
+{{ end }}
+{{ end }}

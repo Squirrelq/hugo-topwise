@@ -1,0 +1,34 @@
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          {{ if .Site.Data.social }}
+          <ul class="social">
+              {{ range .Site.Data.social }}
+                  <li><a href="{{ .link }}" target="blank"><img width="20" height="20" src="{{ .image | relURL }}" title="{{ .name }}" alt="{{ .name }}" /></a></li>
+              {{ end }}
+          </ul>
+          {{ end }}
+          <ul class="footer-contact">
+            {{ if .Site.Data.contact.phone }}
+            <li><i class="fas fa-1x fa-phone" aria-hidden="true"></i>
+              <a>{{ .Site.Data.contact.phone }}</a>
+            </li>
+            {{ end }}
+            {{ if .Site.Data.contact.email }}
+            <li><i class="fas fa-1x fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:{{ .Site.Data.contact.email }}">
+                {{ .Site.Data.contact.email }}</a>
+            </li>
+              {{ end }}
+          </ul>
+          <ul class="footer-menu">
+            <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+            <li><a href="{{ .Site.BaseURL }}contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
