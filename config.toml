@@ -1,0 +1,54 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Topwise Support Pty Ltd"
+themesDir = "themes"
+theme = "hugo-topwise"
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.92.0"
+    
+[params]
+  google_analytics_id=""
+
+  [params.logo]
+    mobile = "images/WebLogo.webp"
+    mobile_height = "36px"
+    mobile_width = "36px"
+    desktop = "images/WebLogo.webp"
+    desktop_height = "90px"
+    desktop_width = "360px"
+    alt = "Topwise Support"
+
+  [params.homepage_meta_tags]
+    meta_description = "Top Wise Support Coordination You Can Count On"
+    meta_og_title = "Topwise Support"
+    meta_og_type = "website"
+    meta_og_url = "http://www.topwisesupport.com.au"
+    meta_og_description = "We Provide Top Wise Support"
+    meta_twitter_card = "summary"
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Our Services"
+    url = "/index.html#home1"
+    weight = 2
+
+[[menu.main]]
+    name = "About Us"
+    url = "/about/"
+    weight = 3
+
+[[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
+  pages = "/:filename/"
