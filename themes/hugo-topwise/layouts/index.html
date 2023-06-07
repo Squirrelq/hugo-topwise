@@ -1,0 +1,74 @@
+{{ define "title" }}{{ .Site.Title }}{{ end}}
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-home{{ end }}
+{{ define "header_classes" }}header-transparent{{ end }}
+
+{{ define "meta_tags" }}
+<meta name="description" content="{{ .Site.Params.homepage_meta_tags.meta_description }}" />
+<meta property="og:title" content="{{ .Site.Params.homepage_meta_tags.meta_og_title }}" />
+<meta property="og:type" content="{{ .Site.Params.homepage_meta_tags.meta_og_type }}" />
+<meta property="og:url" content="{{ .Site.Params.homepage_meta_tags.meta_og_url }}" />
+<meta property="og:image" content="{{ .Site.Params.homepage_meta_tags.meta_og_image }}" />
+<meta property="og:description" content="{{ .Site.Params.homepage_meta_tags.meta_og_description }}" />
+{{ end }}
+
+{{ define "main" }}
+
+{{ partial "home-image-fullscreen.html" (dict "background" .Params.homeBackground "heading" .Params.homeHeading "subheading" .Params.homeSubHeading "content" .)}}
+
+{{ $headless := .Site.GetPage "/homepage" }}
+{{ $reusablePages := $headless.Resources.ByType "page" }}
+{{ $reusablePages := sort $reusablePages ".Params.weight" }}
+{{ range first 1 $reusablePages }}
+<div id="home" class="strip bg-cover bg-position-center bg-overlay" style="background-image: url('{{ .Params.background | relURL }}');">
+  <div class="container pt-10 pb-20">
+    <div class="row mr-1 mr-sm-10 mr-md-3 mr-lg-13 mr-xl-10">
+      <div class="col-12 col-lg-7 offset-lg-7 col-xl-6 offset-xl-8">
+        <div class="mission-text"><h2>{{ .Title }}</h2></div>
+        {{ .Content }}
+        {{ if .Params.button }}
+        <a class="button" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+{{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
+{{if gt (len $services) 0}}
+<div id="home1" class="container pt-8 pb-8 pb-md-11 pt-md-11">
+  <div class="row justify-content-start">
+    <div class="col-12">
+      <h2 class="text-center mb-3">How Can We Help</h2>
+    </div>
+    {{ range first 6 (sort $services ".Params.weight") }}
+    <div class="col-12 col-md-4 mb-1">
+      {{ .Render "summary" }}
+    </div>
+    {{ end }}
+    <div class="col-12 mt-3 text-center">
+      <a class="button button-primary" href="{{ .Site.BaseURL }}contact">Contact Us</a>
+    </div>
+  </div>
+</div>
+{{end}}
+
+{{ range first 1 (after 1 $reusablePages) }}
+<div class="strip bg-green bg-cover bg-position-center bg-overlay" style='background-image: url("{{ .Params.background | relURL }}");'>
+  <div class="container pt-2 pb-2 pt-sm-8 pb-sm-8 pb-lg-15 pt-lg-15 pb-xl-22 pt-xl-21">
+    <div class="row justify-content-left">
+      <div class="col-5 col-sm-4 col-md-3 text-right text-white">
+        <h2>{{ .Title }}</h2>
+        {{ .Content }}
+        <a class="button button-white" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+{{ end }}
+
+{{ define "footer_js" }}
+{{ end }}

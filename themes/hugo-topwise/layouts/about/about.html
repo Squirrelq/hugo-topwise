@@ -1,0 +1,49 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-about{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+
+{{ define "main" }}
+<div id="about" class="hero-bg">
+  <div class="hero-about">
+    <div class="container pt-1">
+      <div class="row">
+        <div class="hero-text col-12">
+          <h1>
+            {{ with .Params.heading }}
+              <span class="heading">{{ . }}</span>
+            {{ end }}
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="about-ulli" class="about-main">
+    <div class="about-top">
+      <div class="about-bg">
+        <div class="about-text">
+          <p>{{ .Params.subheading }}</p>
+        </div>
+      </div>
+      <div class="about-img-container">
+        <picture class="about-img">
+          <img src="/images/home2.jpg" />
+        </picture>
+      </div>
+    </div>
+    <div class="container pt-2 pb-4 about-bottom">
+      <div class="about-row">
+        <div class="ulli-img">
+          <img src="{{ .Params.image | relURL }}" />
+        </div>
+        <div class="ulli-text">
+          <div class="inner-bottom">
+            {{ .Content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+{{ end }}

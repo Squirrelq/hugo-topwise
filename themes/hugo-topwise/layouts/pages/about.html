@@ -1,0 +1,85 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-about{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+{{ partial "about-header.html" (dict "title" .Params.title "heading" .Params.heading "content" .)}}
+
+{{ $headless := .Site.GetPage "/pages/about" }}
+{{ $subpages := $headless.Resources.ByType "page" }}
+{{ $subpages := sort $subpages ".Params.weight" }}
+{{ range $subpages }}
+
+<div id="about" class="header-bg">
+{{ if .Params.title }}
+  <div class="header-about">
+    <div class="container pt-1">
+      <div class="row">
+        <div class="header-text col-12">
+          <h1>
+            {{ with .Params.title }}
+              <span class="heading">{{ . }}</span>
+            {{ end }}
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+{{ end }}
+  <section id="about-ulli" class="about-main">
+  {{ if eq .Params.align "top" }}
+    <div class="strip about-top">
+      <div class="about-bg">
+        <div class="about-text">
+          {{ .Content }}
+        </div>
+      </div>
+      <div class="about-img-container">
+        <picture class="about-img">
+          <img src="{{ .Params.image | relURL }}" />
+        </picture>
+      </div>
+    </div>
+  {{ end }}
+  {{ if eq .Params.align "bottom" }}
+    <div class="strip about-bottom">
+      <div class="container pt-2 pb-4 pb-sm-1 pb-md-4">
+        <div class="about-row">
+          <div class="ulli-img">
+            <img src="{{ .Params.image | relURL }}" />
+          </div>
+          <div class="ulli-text">
+            <div class="inner-bottom">
+              {{ .Content }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{ end }}
+  {{ if eq .Params.align "sub" }}
+    <div class="strip about-sub">
+      <div class="container pr-md-0">
+        <div class="sub-row">
+          {{ if .Params.image }}
+          <div class="sub-img">
+            <img src="{{ .Params.image | relURL }}" />
+          </div>
+          {{ end }}
+          <div class="sub-text">
+           <h1 class="text-capitalize">{{ .Params.heading }}</h1>
+          </div>
+          <div class="inner-sub">
+            {{ .Content }}
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </section>
+</div>
+
+{{ end }}
+{{ .Content }}
+
+{{ end }}
