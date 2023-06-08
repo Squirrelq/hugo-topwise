@@ -2,7 +2,7 @@
 title: ''
 date: 2018-12-06T09:29:16+10:00
 weight: 1
-image: 'images/home2.jpg'
+image: 'images/home2.webp'
 heading: ''
 subHeading: ''
 align: top
