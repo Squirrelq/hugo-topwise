@@ -70,9 +70,10 @@
     width: 150px;
 }
 .home-image-fullscreen {
-  height: 70vh;
-  @include media-breakpoint-up(sm) {
   height: 100vh;
+  background-position-x: 25%;
+  @include media-breakpoint-up(sm) {
+    background-position-x: left;
   }
 }
 .home-image-setheight {
