@@ -2,7 +2,7 @@
 title: ''
 date: 2018-12-06T09:29:16+10:00
 weight: 2
-image: 'images/webpuss.jpg'
+image: 'images/webpuss.webp'
 heading: 'Ulli Quick'
 subHeading: ''
 align: bottom
