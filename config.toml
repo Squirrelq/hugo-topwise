@@ -37,12 +37,12 @@ theme = "hugo-topwise"
 [[menu.main]]
     name = "Our Services"
     url = "/index.html#home1"
-    weight = 2
+    weight = 3
 
 [[menu.main]]
     name = "About Us"
     url = "/about/"
-    weight = 3
+    weight = 2
 
 [[menu.main]]
     name = "Contact"
