@@ -7,6 +7,9 @@
   img {
     width: 100%;
     height: auto;
+    @include media-breakpoint-up(lg) {
+      vertical-align: super;
+    }
   }
   a {
     display: block;
