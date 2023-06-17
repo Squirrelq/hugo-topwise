@@ -2,6 +2,7 @@
   display: none;
   @include media-breakpoint-up(md) {
     display: block;
+    min-width: fit-content;
   }
   > ul {
     display: flex;
@@ -12,7 +13,7 @@
       list-style: none;
       font-size: 1rem;
       > a {
-        padding: 10px 14px 10px 14px;
+        padding: 10px 0px 10px 30px;
         display: inline-block;
         font-weight: regular;
         text-transform: uppercase;
