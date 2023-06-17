@@ -2,8 +2,10 @@
   color: $primary-dark;
   h2 {
     font-size: 1.3rem;
+    mix-blend-mode: plus-lighter;
     @include media-breakpoint-up(sm) {
       font-size: 1.6rem;
+      mix-blend-mode: revert;
     }
     @include media-breakpoint-up(md) {
       font-size: 2rem;
