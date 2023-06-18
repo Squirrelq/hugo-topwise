@@ -54,9 +54,9 @@
     flex: 0;
     text-align: center;
     opacity: 0.85;
-    padding-bottom: 35px;
+    padding-bottom: 60px;
     @include media-breakpoint-up(sm) {
-      padding-bottom: 15px;
+      padding-bottom: 20px;
     }
     &:hover {
       opacity: 1;
