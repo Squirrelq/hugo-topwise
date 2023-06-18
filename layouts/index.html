@@ -14,7 +14,7 @@
 
 {{ define "main" }}
 
-{{ partial "home-image-fullscreen.html" (dict "background" .Params.homeBackground "heading" .Params.homeHeading "subheading" .Params.homeSubHeading "content" .)}}
+{{ partial "home-image-fullscreen.html" (dict "background" .Params.homeBackground "heading" .Params.homeHeading "heading2" .Params.homeHeading2 "subheading" .Params.homeSubHeading "content" .)}}
 
 {{ $headless := .Site.GetPage "/homepage" }}
 {{ $reusablePages := $headless.Resources.ByType "page" }}
