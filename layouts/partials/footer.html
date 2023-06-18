@@ -17,9 +17,9 @@
             </li>
             {{ end }}
             {{ if .Site.Data.contact.email }}
-            <li><i class="fas fa-1x fa-envelope" aria-hidden="true" style="display: flex;">
+            <li><a><img class="footer-emailIcon" src="{{ .Site.Data.contact.emailIcon }}" />
               <div class="footer-email"><a href="mailto:{{ .Site.Data.contact.email }}">contact@topwise<wbr>support.com.au</a>
-              </div></i>
+              </div></a>
             </li>
               {{ end }}
           </ul>
