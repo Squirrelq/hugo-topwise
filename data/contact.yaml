@@ -1,7 +1,7 @@
 email: 'contact@topwisesupport.com.au'
-emailIcon: 'images/envelope-solid.svg'
+emailIcon: '/images/envelope-solid.svg'
 phone: '0493 765 953'
-phoneIcon: 'images/phone-solid.svg'
+phoneIcon: '/images/phone-solid.svg'
 businessName: 'Topwise Support'
 address:
 hours:
