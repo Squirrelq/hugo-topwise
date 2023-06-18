@@ -8,7 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {{ block "meta_tags" . }}{{end}}
   <link rel="icon" href="{{ .Site.BaseURL }}favicon.png">
-  <script src="https://kit.fontawesome.com/af1dc917df.js" crossorigin="anonymous"></script>
 
   {{ if .Site.IsServer }}
   {{ $style := resources.Get "scss/style.scss" | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" true) }}
