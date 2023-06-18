@@ -33,10 +33,20 @@
       flex-direction: row;
       align-items: center;
     }
+    .footer-phoneIcon {
+      width: 11px;
+      height: auto;
+      margin-bottom: 1px;
+    }
+    .footer-emailIcon {
+      width: 11px;
+      height: auto;
+      margin-bottom: 1px;
+    }
     .footer-email {
-    font-family: lato,open sans,helvetica neue,Arial,sans-serif,-apple-system;
-    font-weight: normal;
-    margin-left: 3px;
+      font-family: lato,open sans,helvetica neue,Arial,sans-serif,-apple-system;
+      font-weight: normal;
+      margin-left: 3px;
     }
   }
   .footer-title {
