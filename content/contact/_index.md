@@ -1,6 +1,7 @@
 ---
 title: 'Contact'
-heroSubHeading: 'Want to know more? Call or email now for a confidential chat'
+Heading: 'Want to Know How Topwise Can Help?'
+SubHeading: 'Call or email now for a confidential chat'
 date: 2018-02-22T17:01:34+07:00
 image: 'images/contact2.webp'
 ---
