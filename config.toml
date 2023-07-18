@@ -25,7 +25,7 @@ theme = "hugo-topwise"
     meta_description = "Top Wise Support Coordination You Can Count On"
     meta_og_title = "Topwise Support"
     meta_og_type = "website"
-    meta_og_url = "http://www.topwisesupport.com.au"
+    meta_og_url = "https://www.topwisesupport.com.au"
     meta_og_description = "We Provide Top Wise Support"
     meta_twitter_card = "summary"
 
