@@ -22,11 +22,27 @@ theme = "hugo-topwise"
     alt = "Topwise Support"
 
   [params.homepage_meta_tags]
-    meta_description = "Top Wise Support Coordination You Can Count On"
-    meta_og_title = "Topwise Support"
+    meta_description = "Empowering The People We Support To Help Create A Better Everyday Life"
+    meta_og_title = "Topwise Support Coordination Melbourne"
     meta_og_type = "website"
-    meta_og_url = "https://www.topwisesupport.com.au"
-    meta_og_description = "We Provide Top Wise Support"
+    meta_og_url = "https://www.topwisesupport.com.au/"
+    meta_og_description = "Melbourne Based Support Cordination - Many Years of Knowledge for Your Betterment"
+    meta_twitter_card = "summary"
+
+  [params.about_meta_tags]
+    meta_description = "Our Focus is Prioritising The Rights and Preferences of The People We Support"
+    meta_og_title = "About US - Topwise Support, Melbourne"
+    meta_og_type = "website"
+    meta_og_url = "https://www.topwisesupport.com.au/about/"
+    meta_og_description = "Get to Know Topwise Support and Find Out How We Can Help"
+    meta_twitter_card = "summary"
+
+  [params.contact_meta_tags]
+    meta_description = "Reach Out to See How We Can Support You"
+    meta_og_title = "Contact Topwise Support - Melbourne"
+    meta_og_type = "website"
+    meta_og_url = "https://www.topwisesupport.com.au/contact/"
+    meta_og_description = "Melbourne Based Support Cordination Contact Details"
     meta_twitter_card = "summary"
 
 [[menu.main]]
