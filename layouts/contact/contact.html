@@ -2,6 +2,15 @@
 {{ define "body_classes" }}page-contact{{ end }}
 {{ define "header_classes" }}{{ end }}
 
+{{ define "meta_tags" }}
+<meta name="description" content="{{ .Site.Params.contact_meta_tags.meta_description }}" />
+<meta property="og:title" content="{{ .Site.Params.contact_meta_tags.meta_og_title }}" />
+<meta property="og:type" content="{{ .Site.Params.contact_meta_tags.meta_og_type }}" />
+<meta property="og:url" content="{{ .Site.Params.contact_meta_tags.meta_og_url }}" />
+<meta property="og:image" content="{{ .Site.Params.contact_meta_tags.meta_og_image }}" />
+<meta property="og:description" content="{{ .Site.Params.contact_meta_tags.meta_og_description }}" />
+{{ end }}
+
 {{ define "main" }}
 <div class="intro intro-small">
   <div class="container pt-5 pl-5">
