@@ -72,7 +72,7 @@
     justify-content: center;
   }
   .hero-text {
-    color: $red;
+    color: #41c391;
     margin: 10px 0 10px 0;
     text-align: -webkit-center;
     h1 {
@@ -95,6 +95,7 @@
       font-size: 1.6rem;
       line-height: 1.3;
       @include media-breakpoint-up(md) {
+        margin-top: 16px;
         font-size: 1.6rem;
         width: 60%;
       }
