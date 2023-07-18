@@ -36,7 +36,7 @@ theme = "hugo-topwise"
 
 [[menu.main]]
     name = "Our Services"
-    url = "/index.html#home1"
+    url = "/services/"
     weight = 3
 
 [[menu.main]]
