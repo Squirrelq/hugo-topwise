@@ -3,7 +3,7 @@
 {{ define "header_classes" }}{{ end }}
 
 {{ define "main" }}
-{{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" false }}
+{{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
 <div class="container pt-4 pt-md-10 pb-4 pb-md-10">
   <div class="row justify-content-start">
     <div class="col-12 col-md-8">
