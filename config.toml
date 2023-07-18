@@ -37,6 +37,14 @@ theme = "hugo-topwise"
     meta_og_description = "Get to Know Topwise Support and Find Out How We Can Help"
     meta_twitter_card = "summary"
 
+  [params.services_meta_tags]
+    meta_description = "Complete Support and Specialist Support Coordination"
+    meta_og_title = "Topwise Support Services - What We Do!"
+    meta_og_type = "website"
+    meta_og_url = "https://www.topwisesupport.com.au/services/"
+    meta_og_description = "Details on our services which allows us to provide the high quality support coordination"
+    meta_twitter_card = "summary"
+
   [params.contact_meta_tags]
     meta_description = "Reach Out to See How We Can Support You"
     meta_og_title = "Contact Topwise Support - Melbourne"
