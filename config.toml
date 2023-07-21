@@ -38,7 +38,7 @@ theme = "hugo-topwise"
     meta_twitter_card = "summary"
 
   [params.services_meta_tags]
-    meta_description = "Complete Support and Specialist Support Coordination"
+    meta_description = "Quality Support Coordination and Specialist Support Coordination"
     meta_og_title = "Topwise Support Services - What We Do!"
     meta_og_type = "website"
     meta_og_url = "https://www.topwisesupport.com.au/services/"
