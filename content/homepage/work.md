@@ -3,6 +3,6 @@ title: 'Our Mission is to empower the people we support to achieve their individ
 weight: 1
 background: 'images/home6.webp'
 button: ''
-buttonLink: 'about'
+buttonLink: 'about/'
 ---
 
