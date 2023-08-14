@@ -6,3 +6,8 @@
   HUGO_VERSION = "0.111.3"
   HUGO_THEME = "hugo-topwise"
   HUGO_BASEURL = "/"
+
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
