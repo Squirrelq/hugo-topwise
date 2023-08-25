@@ -28,7 +28,7 @@ theme = "hugo-topwise"
     meta_og_url = "https://www.topwisesupport.com.au/"
     meta_og_description = "Melbourne Based Support Cordination - Many Years of Knowledge for Your Betterment"
     meta_twitter_card = "summary"
-    meta_og_image = "images/Weblinklogo.webp"
+    meta_og_image = "images/linklogo.png"
 
   [params.about_meta_tags]
     meta_description = "Our Focus is Prioritising The Rights and Preferences of The People We Support"
@@ -37,7 +37,7 @@ theme = "hugo-topwise"
     meta_og_url = "https://www.topwisesupport.com.au/about/"
     meta_og_description = "Get to Know Topwise Support and Find Out How We Can Help"
     meta_twitter_card = "summary"
-    meta_og_image = "images/Weblinklogo.webp"
+    meta_og_image = "images/linklogo.png"
 
   [params.services_meta_tags]
     meta_description = "Quality Support Coordination and Specialist Support Coordination"
@@ -46,7 +46,7 @@ theme = "hugo-topwise"
     meta_og_url = "https://www.topwisesupport.com.au/services/"
     meta_og_description = "Details on our services which allows us to provide the high quality support coordination"
     meta_twitter_card = "summary"
-    meta_og_image = "images/Weblinklogo.webp"
+    meta_og_image = "images/linklogo.png"
 
   [params.contact_meta_tags]
     meta_description = "Reach Out to See How We Can Support You"
@@ -55,7 +55,7 @@ theme = "hugo-topwise"
     meta_og_url = "https://www.topwisesupport.com.au/contact/"
     meta_og_description = "Melbourne Based Support Cordination Contact Details"
     meta_twitter_card = "summary"
-    meta_og_image = "images/Weblinklogo.webp"
+    meta_og_image = "images/linklogo.png"
 
 [[menu.main]]
     name = "Home"
